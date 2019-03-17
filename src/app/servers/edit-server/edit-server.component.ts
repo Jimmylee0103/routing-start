@@ -20,11 +20,11 @@ export class EditServerComponent implements OnInit {
     this.server = this.serversService.getServer(1);
     this.serverName = this.server.name;
     this.serverStatus = this.server.status;
-    this.server = {
-      id: this.route.snapshot.params['id'],
-      name: this.route.snapshot.params['name'],
-      status: this.route.snapshot.params['status']
-    }
+    // this.server = {
+    //   id: this.route.snapshot.params['id'],
+    //   name: this.route.snapshot.params['name'],
+    //   status: this.route.snapshot.params['status']
+    // }
   }
 
   onUpdateServer() {
